@@ -11,12 +11,13 @@
 
     INITIAL_TABLES_PREPARATION.ipynb
   
-- 1) In the TL removes white spaces
+1) In the TL removes white spaces
 
+========================================= 
 
 A) PREPARE THE DATASETS - A.ipynb
 
-- 1) In the TL, keep only the entries for which the para_phon column is not empty
+ 1) In the TL, keep only the entries for which the para_phon column is not empty
 If the entry is a verb, check that the stem_space column is not empty
 Call RTL (restricted table of lexemes) the resulting sub-table of lexeme 
 
@@ -49,7 +50,7 @@ becomes:
 Vmii---:byv	Vmip3p-:bwav	Vmip-s-:bwa	Vmpp---:byv	Vmmp-s-:bwa	Vmmp-p-:byv	Vmsp-s-:bwav	Vmsp-p-:byv	Vmn----:bwa	Vmif---:bwa	Vmis---:by	Vmps---:by
 
 
-- 2) In RT, keep only the relations between lexemes present in RTL. Call RTR (restricted table of relations) the resulting sub-table of relations 
+2) In RT, keep only the relations between lexemes present in RTL. Call RTR (restricted table of relations) the resulting sub-table of relations 
 
 Below, I use "Word1" and "Word2" to name the lexemes that make up the relation (Word1, Word2) in the RTR.
 
@@ -74,7 +75,7 @@ Xeur	œʁ
 B) PHONETIC ENCODING OF THE AFFIXES  - B.ipynb
 
 
-- 5) 
+5) 
 (a) In RTR add two columns: one is called phon_aff_1, and encodes the phonetic transcription of the affix on Word1. The other one is called phon_aff_2, and encodes the phonetic transcription of the affix  on Word2.
 
 -  In each row of RTR, use cstr_1 and the TCP table to code the phonetic transcription of the affix corresponding to cstr_1 in the corresponding phon_aff_1 column. If cstr_1=X, the value is "None". 
@@ -91,7 +92,7 @@ B) PHONETIC ENCODING OF THE AFFIXES  - B.ipynb
 
 C)PHONETIC TRANSRIPTION OF WORDi (REMOVE THE AFFIX (IF ANY))  - C.ipynb
 
-- 6) identify the phonetic transcription of the stem(s) of Word1 and Word2 : 
+6) identify the phonetic transcription of the stem(s) of Word1 and Word2 : 
  
 
 -  if Wordi is a verb: 
@@ -107,6 +108,6 @@ C)PHONETIC TRANSRIPTION OF WORDi (REMOVE THE AFFIX (IF ANY))  - C.ipynb
 
 D) STEM VARIATION BTW WORD1/WORD2 - D.ipynb
 
-- 7) compare phon_X_1 and phon_X_2
+7) compare phon_X_1 and phon_X_2
 
 
